@@ -1,17 +1,252 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>portfolio</title>
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template 2023</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+  <body class="bg-white">
+    <header class="w-full bg-white">
+      <div class="container mx-auto">
+        <nav class="justify-between bg-white lg:flex">
+          <div class="border-solid p-6 text-center text-black">
+            <a href="#home">Home</a>
+          </div>
+          <div class="p-6 text-center text-black">
+            <a href="#om-text">About Me</a>
+          </div>
+          <div class="p-6 text-center text-black">
+            <a href="#projects">Projects</a>
+          </div>
+          <div class="p-6 text-center text-black">
+            <a href="#">Skills</a>
+          </div>
+          <div class="p-6 text-center text-black">
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section id="home">
+      <div class="hero mb-8 min-h-screen border-t-2 border-black bg-pink-100">
+        <div class="hero-content flex-col">
+          <div>
+            <h1 class="mb-2 text-5xl text-black lg:text-8xl">
+              Multimediadesigner
+            </h1>
+            <h2
+              class="text-4xl tracking-tight text-black lg:text-6xl lg:tracking-tighter"
+            >
+              CAROLINE THOMSEN
+            </h2>
+            <h3
+              class="mb-4 tracking-tight text-black lg:text-4xl lg:tracking-tighter"
+            >
+              PORTFOLIO
+            </h3>
+
+            <button>View Projects</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <main class="mx-auto grid place-content-center">
+      <section class="grid-1-1 mx-auto p-8 md:p-0">
+        <div id="om-text">
+          <div class="mb-5 rounded-3xl bg-pink-100 pt-10 pb-10 pl-10 pr-10">
+            <h4 class="mb-5 text-3xl text-black lg:text-4xl">About Me</h4>
+            <p class="text-black">
+              orem ipsum dolor sit amet, consectetur adipisci elit, sed eiusmod
+              tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrum exercitationem ullam corporis suscipit
+              laboriosam, nisi ut aliquid ex ea commodi consequatur. Quis aute
+              iure reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint obcaecat cupiditat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+
+        <div class="mig-billede">
+          <img src="img/me.png" alt="mig2" />
+        </div>
+      </section>
+      <section id="projects">
+        <section
+          class="container mx-auto grid grid-cols-1 p-8 md:p-0 lg:grid-cols-3"
+        >
+          <a href="https://loststudios.dk/kea/nbu/" target="_blank">
+            <div
+              class="card-compact card mx-auto mb-10 w-96 bg-base-100 shadow-xl"
+            >
+              <figure class="mb-5">
+                <img src="img/n.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title font-normal tracking-tight">
+                  NØRRBRO UNITED REDESIGN
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge-outline badge">Wordpress</div>
+                  <div class="badge-outline badge">CMS</div>
+                  <div class="badge-outline badge">Rest api</div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://loststudios.dk/kea/redesign/" target="_blank">
+            <div
+              class="card-compact card mx-auto mb-10 w-96 bg-base-100 shadow-xl"
+            >
+              <figure>
+                <img src="img/a.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title font-normal tracking-tight">
+                  ANE SCHOLLERT REDESIGN
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge-outline badge">Photoshop</div>
+                  <div class="badge-outline badge">UX</div>
+                  <div class="badge-outline badge">Branding</div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://loststudios.dk/kea/08_brugercenteretdesign/landing-page/portfolio.html "
+            target="_blank"
+          >
+            <div
+              class="card-compact card mx-auto mb-10 w-96 bg-base-100 shadow-xl"
+            >
+              <figure class="pb-16 pt-10 pl-3 pr-3">
+                <img src="img/b.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title font-normal tracking-tight">
+                  BLAAGAARD TEATER CAMPAIGN
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge-outline badge">Premiere Pro</div>
+                  <div class="badge-outline badge">Concept development</div>
+                  <div class="badge-outline badge">Branding</div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://instagram.com/birke.1972?igshid=YmMyMTA2M2Y= "
+            target="_blank"
+          >
+            <div
+              class="card-compact card mx-auto mb-10 w-96 bg-base-100 shadow-xl"
+            >
+              <figure class="pb-16 pt-10">
+                <img src="img/birke.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title font-normal tracking-tight">
+                  BIRKE SOME ASSISTENT
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge-outline badge">Social media</div>
+                  <div class="badge-outline badge">content</div>
+                  <div class="badge-outline badge">graphic design</div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://loststudios.dk/kea/04-animation/spil/spil.html"
+            target="_blank"
+          >
+            <div
+              class="card-compact card mx-auto mb-10 w-96 bg-base-100 shadow-xl"
+            >
+              <figure class="pb-3 pt-10">
+                <img src="img/nemo.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title font-normal tracking-tight">
+                  GAME ANIMATION
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge-outline badge">HTML</div>
+                  <div class="badge-outline badge">CSS</div>
+                  <div class="badge-outline badge">Illutrator</div>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://loststudios.dk/kea/07_dynamisk%20/sunstainable/"
+            target="_blank"
+          >
+            <div
+              class="card-compact card mx-auto mb-10 w-96 bg-base-100 shadow-xl"
+            >
+              <figure class="">
+                <img src="img/suns.png" alt="Shoes" />
+              </figure>
+              <div class="card-body">
+                <h3 class="card-title font-normal tracking-tight">
+                  DYNAMIC WEB
+                </h3>
+                <p>If a dog chews shoes whose shoes does he choose?</p>
+                <div class="card-actions justify-end">
+                  <div class="badge-outline badge">HTML</div>
+                  <div class="badge-outline badge">JavaScript</div>
+                  <div class="badge-outline badge">Illutrator</div>
+                </div>
+              </div>
+            </div>
+          </a>
+        </section>
+      </section>
+      <section id="skills">
+        <div
+          class="container mx-auto mt-10 mb-10 grid justify-center gap-5 rounded-3xl bg-pink-100 pt-10 pb-10 lg:grid-cols-6"
+        >
+          <div>
+            <div class="radial-progress" style="--value: 70">70%</div>
+            <p class="pl-5 pt-2 text-left">HTML/CSS</p>
+          </div>
+          <div>
+            <div class="radial-progress" style="--value: 90">90%</div>
+            <p class="pl-5 pt-2 text-left">UX</p>
+          </div>
+          <div>
+            <div class="radial-progress" style="--value: 80">80%</div>
+            <p class="pt-2 text-left">Concept development</p>
+          </div>
+          <div>
+            <div class="radial-progress" style="--value: 85">85%</div>
+            <p class="pt-2 text-left">Web design</p>
+          </div>
+          <div>
+            <div class="radial-progress" style="--value: 70">70%</div>
+            <p class="pt-2 text-left">Adobe Package</p>
+          </div>
+          <div>
+            <div class="radial-progress" style="--value: 50">50%</div>
+            <p class="pt-2 text-left">figma</p>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script type="module" src="./main.js"></script>
   </body>
